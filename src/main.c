@@ -6,7 +6,7 @@
 /*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/06 02:31:10 by home              #+#    #+#             */
-/*   Updated: 2020/07/25 20:25:58 by home             ###   ########.fr       */
+/*   Updated: 2020/07/25 20:46:37 by home             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,9 @@ int	main(void)
 	game_state.circles[0].y = 300;
 	game_state.circles[0].x = 200;
 	game_state.circles[0].r = 50;
+
+	game_state.circles[0].vel_x = 9;
+	game_state.circles[0].vel_y = 2;
 
 	while (game_state.active == true)
 	{
