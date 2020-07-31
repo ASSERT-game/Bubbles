@@ -6,7 +6,7 @@
 /*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/06 03:05:42 by home              #+#    #+#             */
-/*   Updated: 2020/07/25 20:39:21 by home             ###   ########.fr       */
+/*   Updated: 2020/07/30 19:19:42 by home             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,19 +24,24 @@ typedef struct	s_display
 
 typedef	struct	s_bubble
 {
-	int			x;
-	int			y;
+	double		x;
+	double		y;
 
 	int			r;
 
-	int			vel_x;
-	int			vel_y;
+	double		vel_x;
+	double		vel_y;
+
+	double		imp_x;
+	double		imp_y;
 }				t_bubble;
 
 typedef struct	s_game_context
 {
 	bool		active;
 	bool		game_over;
+
+	SDL_Renderer	*renderer;
 
 	int			ticks;
 
