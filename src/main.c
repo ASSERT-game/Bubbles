@@ -6,7 +6,7 @@
 /*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/06 02:31:10 by home              #+#    #+#             */
-/*   Updated: 2020/07/30 19:31:28 by home             ###   ########.fr       */
+/*   Updated: 2020/10/27 21:26:54 by home             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,7 @@ int	main(void)
 
 		SDL_RenderPresent(display.renderer);
 		SDL_RenderClear(display.renderer);
-
+		usleep(APP_SPEED);
 	}
 	SDLU_close(&display);
 	return (0);
